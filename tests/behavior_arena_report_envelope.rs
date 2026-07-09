@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/arena/tech-design/logic/external-contracts.md#arena-report-envelope
+// SPEC-MANAGED: apps/arena/tech-design/logic/external-contracts.md#arena-report-envelope
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec arena-report-envelope

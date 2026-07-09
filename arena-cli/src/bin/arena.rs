@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-bin-arena-rs.md#rust-source-unit
+// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-bin-arena-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! `arena` standalone binary: parse → dispatch → one JSON document → exit code.
 

@@ -9,19 +9,19 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized projects/arena/src/engine.rs
+# Standardized apps/arena/src/engine.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `projects/arena/src/engine.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `apps/arena/src/engine.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `RunOpts` | projects/arena/src/engine.rs | struct | pub | 21 |  |
-| `run` | projects/arena/src/engine.rs | function | pub | 32 | run(spec: &Spec, opts: &RunOpts) -> ArenaReport |
+| `RunOpts` | apps/arena/src/engine.rs | struct | pub | 21 |  |
+| `run` | apps/arena/src/engine.rs | function | pub | 32 | run(spec: &Spec, opts: &RunOpts) -> ArenaReport |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -330,11 +330,11 @@ fn prompt(spec: &Spec, comparison: &[ComparisonRow]) -> String {
 
 ```yaml
 changes:
-  - path: projects/arena/src/engine.rs
+  - path: apps/arena/src/engine.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `projects/arena/src/engine.rs` captured during arena
+      rust-source-unit (td_ast) source for `apps/arena/src/engine.rs` captured during arena
       standardization onto the codegen ladder.
 ```

@@ -1,6 +1,6 @@
 ---
 id: semantic-arena-projects-arena
-summary: Semantic coverage for "projects/arena"
+summary: Semantic coverage for "apps/arena"
 capability_refs:
   - id: n-target-comparison-runner
     role: primary
@@ -10,19 +10,19 @@ capability_refs:
 fill_sections: [schema, changes]
 ---
 
-# Semantic TD: arena/projects/arena
+# Semantic TD: arena/apps/arena
 
 ## Schema
 <!-- type: schema lang: yaml -->
 
 ```yaml
 semantic_domain:
-  key: "arena/projects/arena"
-  source_group: "projects/arena"
+  key: "arena/apps/arena"
+  source_group: "apps/arena"
   coverage_kind: semantic
   evidence:
     source_units:
-      - path: "projects/arena/build.sh"
+      - path: "apps/arena/build.sh"
         language: "shell"
         ownership_state: "codegen"
         generator_primitives: ["source_unit"]
@@ -31,8 +31,8 @@ semantic_domain:
           ecosystem: "shell"
           role: "source"
           section_type: "schema"
-          domain: "projects/arena"
-      - path: "projects/arena/install.sh"
+          domain: "apps/arena"
+      - path: "apps/arena/install.sh"
         language: "shell"
         ownership_state: "codegen"
         generator_primitives: ["source_unit"]
@@ -41,8 +41,8 @@ semantic_domain:
           ecosystem: "shell"
           role: "source"
           section_type: "schema"
-          domain: "projects/arena"
-      - path: "projects/arena/llms.txt"
+          domain: "apps/arena"
+      - path: "apps/arena/llms.txt"
         language: "llms"
         ownership_state: "codegen"
         generator_primitives: ["project_root_llms"]
@@ -51,7 +51,7 @@ semantic_domain:
           ecosystem: "llms"
           role: "source"
           section_type: "schema"
-          domain: "projects/arena"
+          domain: "apps/arena"
 ```
 
 ## Changes
@@ -60,7 +60,7 @@ semantic_domain:
 ```yaml
 coverage_kind: semantic
 changes:
-  - path: "projects/arena/llms.txt"
+  - path: "apps/arena/llms.txt"
     action: modify
     section: schema
     description: |

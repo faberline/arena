@@ -1,6 +1,6 @@
 version = 1
 project = "arena"
-td_path = "projects/arena/tech-design"
+td_path = "apps/arena/tech-design"
 generated_at = "2026-06-14T08:04:58.998548+00:00"
 digest = "sha256:c767b642487a12541710988564288fab70231266c2df31646711a89510aaa795"
 

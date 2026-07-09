@@ -1,11 +1,11 @@
 #!/usr/bin/env sh
-# SPEC-MANAGED: projects/arena/tech-design/semantic/arena-install-script.md#text-source-unit
+# SPEC-MANAGED: apps/arena/tech-design/semantic/arena-install-script.md#text-source-unit
 # CODEGEN-BEGIN
 # arena installer — downloads the right prebuilt binary from GitHub
 # Releases and drops it on your PATH.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/projects/arena/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/arena/install.sh | sh
 #
 # Env overrides:
 #   ARENA_VERSION   tag to install (default: latest arena@* release, e.g. arena@1.0)

@@ -196,8 +196,8 @@ Gate Inventory:
 ```bash
 cargo test -p arena                 # spec/compare units + stub-server pipeline e2e
                                     # (+ a real-pg cross-transport test that skips if no local pg)
-projects/arena/build.sh debug       # installs ~/.cargo/bin/arena
-arena run --spec projects/arena/examples/lumen-vs-pg.toml --update-baselines
+apps/arena/build.sh debug       # installs ~/.cargo/bin/arena
+arena run --spec apps/arena/examples/lumen-vs-pg.toml --update-baselines
 ```
 
 The pipeline e2e (`tests/pipeline_e2e.rs`) drives the whole

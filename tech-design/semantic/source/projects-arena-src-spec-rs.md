@@ -9,24 +9,24 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized projects/arena/src/spec.rs
+# Standardized apps/arena/src/spec.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `projects/arena/src/spec.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `apps/arena/src/spec.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `Cell` | projects/arena/src/spec.rs | struct | pub | 82 |  |
-| `CellTarget` | projects/arena/src/spec.rs | struct | pub | 96 |  |
-| `LoadShape` | projects/arena/src/spec.rs | struct | pub | 71 |  |
-| `Spec` | projects/arena/src/spec.rs | struct | pub | 34 |  |
-| `TargetSpec` | projects/arena/src/spec.rs | struct | pub | 56 |  |
-| `cell_metric` | projects/arena/src/spec.rs | function | pub | 175 | cell_metric(&'a self, cell: &'a Cell) -> &'a str |
-| `parse` | projects/arena/src/spec.rs | function | pub | 119 | parse(text: &str) -> Result<Spec, String> |
+| `Cell` | apps/arena/src/spec.rs | struct | pub | 82 |  |
+| `CellTarget` | apps/arena/src/spec.rs | struct | pub | 96 |  |
+| `LoadShape` | apps/arena/src/spec.rs | struct | pub | 71 |  |
+| `Spec` | apps/arena/src/spec.rs | struct | pub | 34 |  |
+| `TargetSpec` | apps/arena/src/spec.rs | struct | pub | 56 |  |
+| `cell_metric` | apps/arena/src/spec.rs | function | pub | 175 | cell_metric(&'a self, cell: &'a Cell) -> &'a str |
+| `parse` | apps/arena/src/spec.rs | function | pub | 119 | parse(text: &str) -> Result<Spec, String> |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -264,11 +264,11 @@ request = { method = "POST", url = "http://127.0.0.1:2/s", body = "{}" }
 
 ```yaml
 changes:
-  - path: projects/arena/src/spec.rs
+  - path: apps/arena/src/spec.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `projects/arena/src/spec.rs` captured during arena
+      rust-source-unit (td_ast) source for `apps/arena/src/spec.rs` captured during arena
       standardization onto the codegen ladder.
 ```

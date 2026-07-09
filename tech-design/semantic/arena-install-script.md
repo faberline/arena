@@ -21,7 +21,7 @@ fill_sections: [text-source-unit, changes]
 # Releases and drops it on your PATH.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/projects/arena/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/arena/install.sh | sh
 #
 # Env overrides:
 #   ARENA_VERSION   tag to install (default: latest arena@* release, e.g. arena@1.0)
@@ -184,7 +184,7 @@ fi
 ```yaml
 coverage_kind: semantic
 changes:
-  - path: "projects/arena/install.sh"
+  - path: "apps/arena/install.sh"
     action: modify
     section: text-source-unit
     description: "Regenerate the arena installer script from a TD-owned text source unit."

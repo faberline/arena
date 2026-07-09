@@ -9,23 +9,23 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized projects/arena/arena-cli/src/dispatch.rs
+# Standardized apps/arena/arena-cli/src/dispatch.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `projects/arena/arena-cli/src/dispatch.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `apps/arena/arena-cli/src/dispatch.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `ArenaCommand` | projects/arena/arena-cli/src/dispatch.rs | struct | pub | 24 |  |
-| `OutputOpts` | projects/arena/arena-cli/src/dispatch.rs | struct | pub | 33 |  |
-| `RunArgs` | projects/arena/arena-cli/src/dispatch.rs | struct | pub | 54 |  |
-| `Verb` | projects/arena/arena-cli/src/dispatch.rs | enum | pub | 41 |  |
-| `execute` | projects/arena/arena-cli/src/dispatch.rs | function | pub | 71 | execute(cmd: ArenaCommand) -> ArenaReport |
-| `print_report` | projects/arena/arena-cli/src/dispatch.rs | function | pub | 128 | print_report(report: &ArenaReport, out: &OutputOpts) -> i32 |
+| `ArenaCommand` | apps/arena/arena-cli/src/dispatch.rs | struct | pub | 24 |  |
+| `OutputOpts` | apps/arena/arena-cli/src/dispatch.rs | struct | pub | 33 |  |
+| `RunArgs` | apps/arena/arena-cli/src/dispatch.rs | struct | pub | 54 |  |
+| `Verb` | apps/arena/arena-cli/src/dispatch.rs | enum | pub | 41 |  |
+| `execute` | apps/arena/arena-cli/src/dispatch.rs | function | pub | 71 | execute(cmd: ArenaCommand) -> ArenaReport |
+| `print_report` | apps/arena/arena-cli/src/dispatch.rs | function | pub | 128 | print_report(report: &ArenaReport, out: &OutputOpts) -> i32 |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -166,11 +166,11 @@ pub fn print_report(report: &ArenaReport, out: &OutputOpts) -> i32 {
 
 ```yaml
 changes:
-  - path: projects/arena/arena-cli/src/dispatch.rs
+  - path: apps/arena/arena-cli/src/dispatch.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `projects/arena/arena-cli/src/dispatch.rs` captured during arena
+      rust-source-unit (td_ast) source for `apps/arena/arena-cli/src/dispatch.rs` captured during arena
       standardization onto the codegen ladder.
 ```

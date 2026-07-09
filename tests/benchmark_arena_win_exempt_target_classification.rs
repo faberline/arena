@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/arena/tech-design/logic/external-contracts.md#arena-win-exempt-target-classification
+// SPEC-MANAGED: apps/arena/tech-design/logic/external-contracts.md#arena-win-exempt-target-classification
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec arena-win-exempt-target-classification

@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/arena/tech-design/logic/external-contracts.md#arena-sequential-target-fanout-measurement
+// SPEC-MANAGED: apps/arena/tech-design/logic/external-contracts.md#arena-sequential-target-fanout-measurement
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec arena-sequential-target-fanout-measurement

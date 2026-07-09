@@ -1,4 +1,4 @@
-// SPEC-MANAGED: projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#rust-source-unit
+// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! Verb parse + dispatch for the `arena` agent-first CLI. Every verb produces
 //! one `arena.report/1` JSON document on stdout; the exit code is rig's
@@ -20,7 +20,7 @@ use arena::spec::Spec;
     about = "arena — N-target competitive comparison (JSON on stdout by default)",
     disable_help_subcommand = true
 )]
-/// @spec projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
+/// @spec apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
 pub struct ArenaCommand {
     #[command(subcommand)]
     pub verb: Verb,
@@ -29,7 +29,7 @@ pub struct ArenaCommand {
 }
 
 #[derive(Args, Debug, Clone, Default)]
-/// @spec projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
+/// @spec apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
 pub struct OutputOpts {
     /// Emit the report as a single dense line (byte-stable golden form).
     #[arg(long, global = true)]
@@ -37,7 +37,7 @@ pub struct OutputOpts {
 }
 
 #[derive(Subcommand, Debug)]
-/// @spec projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
+/// @spec apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
 pub enum Verb {
     /// Run a comparison spec: measure each target, ratio, ratchet-gate, report.
     Run(RunArgs),
@@ -50,7 +50,7 @@ pub enum Verb {
 }
 
 #[derive(Args, Debug)]
-/// @spec projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
+/// @spec apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
 pub struct RunArgs {
     /// Path to the comparison spec (`arena.toml`).
     #[arg(long)]
@@ -67,7 +67,7 @@ pub struct RunArgs {
 }
 
 /// Dispatch a parsed command to one report.
-/// @spec projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
+/// @spec apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
 pub fn execute(cmd: ArenaCommand) -> ArenaReport {
     match cmd.verb {
         Verb::Run(args) => run_run(args),
@@ -124,7 +124,7 @@ fn run_report() -> ArenaReport {
 }
 
 /// Print the report (pretty unless `--compact`) and return its exit code.
-/// @spec projects/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
+/// @spec apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-dispatch-rs.md#source
 pub fn print_report(report: &ArenaReport, out: &OutputOpts) -> i32 {
     let json = if out.compact {
         serde_json::to_string(report)

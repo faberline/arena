@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-src-lib-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-src-lib-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! arena — an N-target competitive comparison runner above rig/meter.
 //!

@@ -1,16 +1,16 @@
 #!/usr/bin/env sh
-# SPEC-MANAGED: apps/arena/tech-design/semantic/arena-install-script.md#text-source-unit
+# SPEC-MANAGED: tech-design/semantic/arena-install-script.md#text-source-unit
 # CODEGEN-BEGIN
 # arena installer — downloads the right prebuilt binary from GitHub
 # Releases and drops it on your PATH.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/chrischeng-c4/axiom/main/apps/arena/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/faberline/arena/main/install.sh | sh
 #
 # Env overrides:
 #   ARENA_VERSION   tag to install (default: latest arena@* release, e.g. arena@1.0)
 #   ARENA_INSTALL   install dir (default: $HOME/.local/bin)
-#   ARENA_REPO      gh repo (default: chrischeng-c4/axiom)
+#   ARENA_REPO      gh repo (default: faberline/arena)
 #   GH_TOKEN      GitHub token for private-repo fetch (also: GITHUB_TOKEN)
 #                 If unset and `gh` is logged in, `gh auth token` is used.
 #
@@ -21,7 +21,7 @@
 #   3  missing curl / tar
 set -eu
 
-REPO="${ARENA_REPO:-chrischeng-c4/axiom}"
+REPO="${ARENA_REPO:-faberline/arena}"
 INSTALL_DIR="${ARENA_INSTALL:-$HOME/.local/bin}"
 VERSION="${ARENA_VERSION:-latest}"
 TOKEN="${GH_TOKEN:-${GITHUB_TOKEN:-}}"

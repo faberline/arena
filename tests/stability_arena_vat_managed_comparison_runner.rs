@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/logic/external-contracts.md#arena-vat-managed-comparison-runner
+// SPEC-MANAGED: tech-design/logic/external-contracts.md#arena-vat-managed-comparison-runner
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec arena-vat-managed-comparison-runner

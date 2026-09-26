@@ -9,22 +9,22 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/src/compare.rs
+# Standardized src/compare.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/src/compare.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `src/compare.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `Classification` | apps/arena/src/compare.rs | enum | pub | 10 |  |
-| `classify` | apps/arena/src/compare.rs | function | pub | 47 | classify(     gate: &str,     ratio: f64,     ratchet: f64,     baseline: Option<f64>,     floor: Option<f64>, ) -> Classification |
-| `is_target_red` | apps/arena/src/compare.rs | function | pub | 39 | is_target_red(&self) -> bool |
-| `is_win_breach` | apps/arena/src/compare.rs | function | pub | 34 | is_win_breach(&self) -> bool |
-| `label` | apps/arena/src/compare.rs | function | pub | 22 | label(&self) -> String |
+| `Classification` | src/compare.rs | enum | pub | 10 |  |
+| `classify` | src/compare.rs | function | pub | 47 | classify(     gate: &str,     ratio: f64,     ratchet: f64,     baseline: Option<f64>,     floor: Option<f64>, ) -> Classification |
+| `is_target_red` | src/compare.rs | function | pub | 39 | is_target_red(&self) -> bool |
+| `is_win_breach` | src/compare.rs | function | pub | 34 | is_win_breach(&self) -> bool |
+| `label` | src/compare.rs | function | pub | 22 | label(&self) -> String |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -144,11 +144,11 @@ mod tests {
 
 ```yaml
 changes:
-  - path: apps/arena/src/compare.rs
+  - path: src/compare.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/src/compare.rs` captured during arena
+      rust-source-unit (td_ast) source for `src/compare.rs` captured during arena
       standardization onto the codegen ladder.
 ```

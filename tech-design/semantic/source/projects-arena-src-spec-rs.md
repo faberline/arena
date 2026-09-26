@@ -9,24 +9,24 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/src/spec.rs
+# Standardized src/spec.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/src/spec.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `src/spec.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `Cell` | apps/arena/src/spec.rs | struct | pub | 82 |  |
-| `CellTarget` | apps/arena/src/spec.rs | struct | pub | 96 |  |
-| `LoadShape` | apps/arena/src/spec.rs | struct | pub | 71 |  |
-| `Spec` | apps/arena/src/spec.rs | struct | pub | 34 |  |
-| `TargetSpec` | apps/arena/src/spec.rs | struct | pub | 56 |  |
-| `cell_metric` | apps/arena/src/spec.rs | function | pub | 175 | cell_metric(&'a self, cell: &'a Cell) -> &'a str |
-| `parse` | apps/arena/src/spec.rs | function | pub | 119 | parse(text: &str) -> Result<Spec, String> |
+| `Cell` | src/spec.rs | struct | pub | 82 |  |
+| `CellTarget` | src/spec.rs | struct | pub | 96 |  |
+| `LoadShape` | src/spec.rs | struct | pub | 71 |  |
+| `Spec` | src/spec.rs | struct | pub | 34 |  |
+| `TargetSpec` | src/spec.rs | struct | pub | 56 |  |
+| `cell_metric` | src/spec.rs | function | pub | 175 | cell_metric(&'a self, cell: &'a Cell) -> &'a str |
+| `parse` | src/spec.rs | function | pub | 119 | parse(text: &str) -> Result<Spec, String> |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -264,11 +264,11 @@ request = { method = "POST", url = "http://127.0.0.1:2/s", body = "{}" }
 
 ```yaml
 changes:
-  - path: apps/arena/src/spec.rs
+  - path: src/spec.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/src/spec.rs` captured during arena
+      rust-source-unit (td_ast) source for `src/spec.rs` captured during arena
       standardization onto the codegen ladder.
 ```

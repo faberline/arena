@@ -9,18 +9,18 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/arena-cli/src/lib.rs
+# Standardized arena-cli/src/lib.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/arena-cli/src/lib.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `arena-cli/src/lib.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `dispatch` | apps/arena/arena-cli/src/lib.rs | module | pub | 5 |  |
+| `dispatch` | arena-cli/src/lib.rs | module | pub | 5 |  |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -35,11 +35,11 @@ pub mod dispatch;
 
 ```yaml
 changes:
-  - path: apps/arena/arena-cli/src/lib.rs
+  - path: arena-cli/src/lib.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/arena-cli/src/lib.rs`
+      rust-source-unit (td_ast) source for `arena-cli/src/lib.rs`
       captured during arena standardization onto the codegen ladder.
 ```

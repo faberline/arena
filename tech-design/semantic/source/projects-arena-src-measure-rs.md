@@ -9,20 +9,20 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/src/measure.rs
+# Standardized src/measure.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/src/measure.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `src/measure.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `fully_failed` | apps/arena/src/measure.rs | function | pub | 81 | fully_failed(stats: &LoadStats) -> bool |
-| `load_is_honest` | apps/arena/src/measure.rs | function | pub | 73 | load_is_honest(load: &LoadShape, stats: &LoadStats) -> bool |
-| `measure` | apps/arena/src/measure.rs | function | pub | 23 | measure(     target: &TargetSpec,     cell: &CellTarget,     load: &LoadShape, ) -> Result<LoadStats, String> |
+| `fully_failed` | src/measure.rs | function | pub | 81 | fully_failed(stats: &LoadStats) -> bool |
+| `load_is_honest` | src/measure.rs | function | pub | 73 | load_is_honest(load: &LoadShape, stats: &LoadStats) -> bool |
+| `measure` | src/measure.rs | function | pub | 23 | measure(     target: &TargetSpec,     cell: &CellTarget,     load: &LoadShape, ) -> Result<LoadStats, String> |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -112,11 +112,11 @@ pub fn fully_failed(stats: &LoadStats) -> bool {
 
 ```yaml
 changes:
-  - path: apps/arena/src/measure.rs
+  - path: src/measure.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/src/measure.rs` captured during arena
+      rust-source-unit (td_ast) source for `src/measure.rs` captured during arena
       standardization onto the codegen ladder.
 ```

@@ -9,12 +9,12 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/arena-cli/src/bin/arena.rs
+# Standardized arena-cli/src/bin/arena.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/arena-cli/src/bin/arena.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `arena-cli/src/bin/arena.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
@@ -42,11 +42,11 @@ fn main() {
 
 ```yaml
 changes:
-  - path: apps/arena/arena-cli/src/bin/arena.rs
+  - path: arena-cli/src/bin/arena.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/arena-cli/src/bin/arena.rs` captured during arena
+      rust-source-unit (td_ast) source for `arena-cli/src/bin/arena.rs` captured during arena
       standardization onto the codegen ladder.
 ```

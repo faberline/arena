@@ -6,7 +6,7 @@
 # driver that emits one latency number), not the HTTP service flavor.
 #
 # Run (with lumen on :7373 and OpenSearch on :9200 already up):
-#   arena run --spec apps/arena/examples/lumen-vs-opensearch.toml
+#   arena run --spec examples/lumen-vs-opensearch.toml
 # First run records baselines:
 #   arena run --spec ... --update-baselines
 #

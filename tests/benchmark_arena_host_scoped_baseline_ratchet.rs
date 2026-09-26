@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/logic/external-contracts.md#arena-host-scoped-baseline-ratchet
+// SPEC-MANAGED: tech-design/logic/external-contracts.md#arena-host-scoped-baseline-ratchet
 // CODEGEN-BEGIN
 // AW-EC-BEGIN
 // @ec arena-host-scoped-baseline-ratchet

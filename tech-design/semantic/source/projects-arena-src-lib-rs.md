@@ -9,22 +9,22 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/src/lib.rs
+# Standardized src/lib.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/src/lib.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `src/lib.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `compare` | apps/arena/src/lib.rs | module | pub | 18 |  |
-| `engine` | apps/arena/src/lib.rs | module | pub | 19 |  |
-| `measure` | apps/arena/src/lib.rs | module | pub | 20 |  |
-| `report` | apps/arena/src/lib.rs | module | pub | 21 |  |
-| `spec` | apps/arena/src/lib.rs | module | pub | 22 |  |
+| `compare` | src/lib.rs | module | pub | 18 |  |
+| `engine` | src/lib.rs | module | pub | 19 |  |
+| `measure` | src/lib.rs | module | pub | 20 |  |
+| `report` | src/lib.rs | module | pub | 21 |  |
+| `spec` | src/lib.rs | module | pub | 22 |  |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -60,11 +60,11 @@ pub use spec::Spec;
 
 ```yaml
 changes:
-  - path: apps/arena/src/lib.rs
+  - path: src/lib.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/src/lib.rs` captured during arena
+      rust-source-unit (td_ast) source for `src/lib.rs` captured during arena
       standardization onto the codegen ladder.
 ```

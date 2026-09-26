@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-src-compare-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-src-compare-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! Ratio classification — a direct port of lumen's `judge()`
 //! (apps/lumen/e2e/perf_gate_vs_db.rs). `ratio = peer / base` over a
@@ -6,7 +6,7 @@
 
 /// The outcome of classifying one (cell, peer) ratio against its gate.
 #[derive(Debug, Clone, PartialEq)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-compare-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-compare-rs.md#source
 pub enum Classification {
     /// `gate = "win"`: the base must beat the peer by `req = max(1, ratchet*baseline)`.
     Win { req: f64, ok: bool },
@@ -16,7 +16,7 @@ pub enum Classification {
     Exempt,
 }
 
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-compare-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-compare-rs.md#source
 impl Classification {
     /// A short human verdict label for the comparison table.
     pub fn label(&self) -> String {
@@ -43,7 +43,7 @@ impl Classification {
 
 /// Classify one peer's `ratio` for a cell. `baseline` is the recorded ratcheted
 /// ratio (None ⇒ first run, treated as floor 1.0); `floor` applies to `target`.
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-compare-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-compare-rs.md#source
 pub fn classify(
     gate: &str,
     ratio: f64,

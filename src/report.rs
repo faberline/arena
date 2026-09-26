@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-src-report-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-src-report-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! `arena.report/1` — rig's report envelope (worst-wins fold + exit ladder)
 //! plus a typed comparison table.
@@ -15,7 +15,7 @@ pub const SCHEMA_VERSION: &str = "arena.report/1";
 
 /// One peer's outcome within a cell.
 #[derive(Debug, Clone, Serialize, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-report-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-report-rs.md#source
 pub struct PeerCell {
     pub target: String,
     /// The peer's measured scalar (same metric/unit as the base).
@@ -36,7 +36,7 @@ pub struct PeerCell {
 
 /// One cell's base value plus every peer's comparison.
 #[derive(Debug, Clone, Serialize, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-report-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-report-rs.md#source
 pub struct ComparisonRow {
     pub cell: String,
     pub metric: String,
@@ -48,14 +48,14 @@ pub struct ComparisonRow {
 /// The single document `arena run` prints to stdout: rig's envelope flattened
 /// at the top level, plus the comparison grid.
 #[derive(Debug, Clone, Serialize, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-report-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-report-rs.md#source
 pub struct ArenaReport {
     #[serde(flatten)]
     pub base: RigReport,
     pub comparison: Vec<ComparisonRow>,
 }
 
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-report-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-report-rs.md#source
 impl ArenaReport {
     /// Wrap a finalized rig report, re-namespacing the schema to arena's.
     pub fn wrap(mut base: RigReport, comparison: Vec<ComparisonRow>) -> Self {

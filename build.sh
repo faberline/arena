@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# SPEC-MANAGED: apps/arena/tech-design/semantic/arena-build-script.md#text-source-unit
+# SPEC-MANAGED: tech-design/semantic/arena-build-script.md#text-source-unit
 # CODEGEN-BEGIN
 set -euo pipefail
 
 usage() {
   cat <<'EOF'
-Usage: apps/arena/build.sh <debug|release>
+Usage: ./build.sh <debug|release>
 
 debug    Build arena-cli and install target/debug/arena to ~/.cargo/bin/arena.
 release  Build/install arena, create a release commit, and print the tag to push after git:land.
@@ -16,7 +16,7 @@ fail_hint() {
   local mode="$1"
   echo ""
   echo "Build failed."
-  echo "Retry with: apps/arena/build.sh ${mode}"
+  echo "Retry with: ./build.sh ${mode}"
   echo "Verify with: ~/.cargo/bin/arena --version"
 }
 
@@ -57,8 +57,8 @@ install_arena() {
 }
 
 if [[ "$MODE" == "debug" ]]; then
-  VERSION_FILES=(apps/arena/Cargo.toml apps/arena/arena-cli/Cargo.toml)
-  CURRENT_VERSION="$(project_build_read_version apps/arena/arena-cli/Cargo.toml)"
+  VERSION_FILES=(Cargo.toml arena-cli/Cargo.toml)
+  CURRENT_VERSION="$(project_build_read_version arena-cli/Cargo.toml)"
   project_build_prepare_debug_version arena "$CURRENT_VERSION" "${VERSION_FILES[@]}"
   cargo build -p arena-cli
   install_arena debug
@@ -68,8 +68,8 @@ if [[ "$MODE" == "debug" ]]; then
   exit 0
 fi
 
-VERSION_FILES=(apps/arena/Cargo.toml apps/arena/arena-cli/Cargo.toml)
-CURRENT_VERSION="$(project_build_read_version apps/arena/arena-cli/Cargo.toml)"
+VERSION_FILES=(Cargo.toml arena-cli/Cargo.toml)
+CURRENT_VERSION="$(project_build_read_version arena-cli/Cargo.toml)"
 export PROJECT_BUILD_REQUIRE_REMOTE_TAG_CHECK=1
 project_build_prepare_release_version arena "$CURRENT_VERSION" "${VERSION_FILES[@]}"
 
@@ -78,7 +78,7 @@ cargo build --release -p arena-cli
 install_arena release
 
 TAG="${PROJECT_BUILD_RELEASE_TAG}"
-git add Cargo.lock apps/arena
+git add Cargo.lock .
 git commit --allow-empty -m "release(arena): ${TAG}"
 
 project_build_print_release_next_steps arena "$TAG"

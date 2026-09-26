@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-src-engine-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-src-engine-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! The measure → compare → gate pipeline. For each cell, measure the base then
 //! each peer (SEQUENTIALLY — concurrent load generators would contend and
@@ -17,7 +17,7 @@ use crate::spec::{Cell, LoadShape, Spec};
 
 /// Knobs for one comparison run.
 #[derive(Debug, Clone, Default)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-engine-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-engine-rs.md#source
 pub struct RunOpts {
     /// Record each measured ratio back as the new baseline (no gating this run).
     pub update_baselines: bool,
@@ -28,7 +28,7 @@ pub struct RunOpts {
 }
 
 /// Run the whole comparison and produce one `arena.report/1`.
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-engine-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-engine-rs.md#source
 pub fn run(spec: &Spec, opts: &RunOpts) -> ArenaReport {
     let mut b = ReportBuilder::new("run", spec.name.clone());
     b.add_criterion(format!(

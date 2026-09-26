@@ -14,8 +14,8 @@
 #     reachable at the dsn below
 #   - OpenSearch on :9200 with a `docs` index
 # Run:
-#   arena run --spec apps/arena/examples/lumen-vs-pg-and-opensearch.toml --update-baselines  # record
-#   arena run --spec apps/arena/examples/lumen-vs-pg-and-opensearch.toml                      # gate
+#   arena run --spec examples/lumen-vs-pg-and-opensearch.toml --update-baselines  # record
+#   arena run --spec examples/lumen-vs-pg-and-opensearch.toml                      # gate
 #
 # Per-target payloads (`request` for lumen/opensearch, `query` for pg) are GLUE
 # — the SAME logical query expressed three ways. arena never reads them; it only

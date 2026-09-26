@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-src-spec-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! The comparison spec — one `arena.toml` describes the whole comparison.
 //!
@@ -30,7 +30,7 @@ fn default_gate() -> String {
 
 /// The whole comparison.
 #[derive(Debug, Clone, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-spec-rs.md#source
 pub struct Spec {
     pub spec_version: u32,
     pub name: String,
@@ -52,7 +52,7 @@ pub struct Spec {
 /// `service`) and `postgres` are implemented; both run on rig's one open-loop
 /// scheduler so their numbers are comparable.
 #[derive(Debug, Clone, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-spec-rs.md#source
 pub struct TargetSpec {
     /// `http` (alias `service`, rig HTTP loadgen) | `postgres` (rig pg transport).
     pub kind: String,
@@ -67,7 +67,7 @@ pub struct TargetSpec {
 /// A [`rig::scenario::load::LoadProfile`] minus its `request` (the request is
 /// supplied per-cell).
 #[derive(Debug, Clone, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-spec-rs.md#source
 pub struct LoadShape {
     pub target_qps: u32,
     pub workers: u32,
@@ -78,7 +78,7 @@ pub struct LoadShape {
 
 /// One logical workload, expressed per-target.
 #[derive(Debug, Clone, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-spec-rs.md#source
 pub struct Cell {
     pub name: String,
     /// Optional per-cell metric override (e.g. a runtime cell comparing cpu).
@@ -92,7 +92,7 @@ pub struct Cell {
 /// forwards to the target's transport. An `http` target uses `request`; a
 /// `postgres` target uses `query`.
 #[derive(Debug, Clone, Deserialize)]
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-spec-rs.md#source
 pub struct CellTarget {
     /// `win` | `exempt` | `target` (ignored on the base target).
     #[serde(default = "default_gate")]
@@ -111,7 +111,7 @@ pub struct CellTarget {
     pub query: Option<String>,
 }
 
-/// @spec apps/arena/tech-design/semantic/source/projects-arena-src-spec-rs.md#source
+/// @spec tech-design/semantic/source/projects-arena-src-spec-rs.md#source
 impl Spec {
     /// Parse a spec from TOML text, validating the structural invariants arena
     /// relies on (base target present, every cell names the base, service

@@ -9,26 +9,26 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/src/report.rs
+# Standardized src/report.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/src/report.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `src/report.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
 | Name | Target | Kind | Visibility | Line | Signature |
 |------|--------|------|------------|------|-----------|
-| `ArenaReport` | apps/arena/src/report.rs | struct | pub | 52 |  |
-| `ComparisonRow` | apps/arena/src/report.rs | struct | pub | 40 |  |
-| `PeerCell` | apps/arena/src/report.rs | struct | pub | 19 |  |
-| `SCHEMA_VERSION` | apps/arena/src/report.rs | constant | pub | 14 |  |
-| `exit_code` | apps/arena/src/report.rs | function | pub | 81 | exit_code(&self) -> i32 |
-| `persist` | apps/arena/src/report.rs | function | pub | 86 | persist(&self, dir: &std::path::Path) |
-| `stub` | apps/arena/src/report.rs | function | pub | 74 | stub(verb: &str, prompt: &str) -> Self |
-| `tool_error` | apps/arena/src/report.rs | function | pub | 67 | tool_error(code: u8, message: impl Into<String>) -> Self |
-| `wrap` | apps/arena/src/report.rs | function | pub | 61 | wrap(mut base: RigReport, comparison: Vec<ComparisonRow>) -> Self |
+| `ArenaReport` | src/report.rs | struct | pub | 52 |  |
+| `ComparisonRow` | src/report.rs | struct | pub | 40 |  |
+| `PeerCell` | src/report.rs | struct | pub | 19 |  |
+| `SCHEMA_VERSION` | src/report.rs | constant | pub | 14 |  |
+| `exit_code` | src/report.rs | function | pub | 81 | exit_code(&self) -> i32 |
+| `persist` | src/report.rs | function | pub | 86 | persist(&self, dir: &std::path::Path) |
+| `stub` | src/report.rs | function | pub | 74 | stub(verb: &str, prompt: &str) -> Self |
+| `tool_error` | src/report.rs | function | pub | 67 | tool_error(code: u8, message: impl Into<String>) -> Self |
+| `wrap` | src/report.rs | function | pub | 61 | wrap(mut base: RigReport, comparison: Vec<ComparisonRow>) -> Self |
 ## Source
 <!-- type: rust-source-unit lang: rust -->
 
@@ -129,11 +129,11 @@ impl ArenaReport {
 
 ```yaml
 changes:
-  - path: apps/arena/src/report.rs
+  - path: src/report.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/src/report.rs` captured during arena
+      rust-source-unit (td_ast) source for `src/report.rs` captured during arena
       standardization onto the codegen ladder.
 ```

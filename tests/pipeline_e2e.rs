@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-tests-pipeline_e2e-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-tests-pipeline_e2e-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! End-to-end pipeline proof: measure → compare → gate → report → exit, driven
 //! against two in-test stub HTTP servers (fast base, slow peer). No real

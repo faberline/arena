@@ -11,8 +11,8 @@
 # Prereqs: lumen serving on :7373 with a `docs` collection; a Postgres with a
 # `docs` table (tsvector GIN index on bio, btree on city/age) loaded with the
 # SAME corpus. Run:
-#   arena run --spec apps/arena/examples/lumen-vs-pg.toml --update-baselines   # record
-#   arena run --spec apps/arena/examples/lumen-vs-pg.toml                       # gate
+#   arena run --spec examples/lumen-vs-pg.toml --update-baselines   # record
+#   arena run --spec examples/lumen-vs-pg.toml                       # gate
 #
 # The per-target payloads (`request` for lumen, `query` for pg) are GLUE — the
 # SAME logical query expressed two ways. arena never reads them; it only

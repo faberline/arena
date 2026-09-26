@@ -9,12 +9,12 @@ capability_refs:
 fill_sections: [overview, source, changes]
 ---
 
-# Standardized apps/arena/tests/pipeline_e2e.rs
+# Standardized tests/pipeline_e2e.rs
 
 ## Overview
 <!-- type: overview lang: markdown -->
 
-Public API manifest for `apps/arena/tests/pipeline_e2e.rs` generated from AST during Score force-regeneration standardization.
+Public API manifest for `tests/pipeline_e2e.rs` generated from AST during Score force-regeneration standardization.
 
 ### Symbols
 
@@ -301,11 +301,11 @@ query = "SELECT 1"
 
 ```yaml
 changes:
-  - path: apps/arena/tests/pipeline_e2e.rs
+  - path: tests/pipeline_e2e.rs
     action: modify
     section: rust-source-unit
     impl_mode: codegen
     description: |
-      rust-source-unit (td_ast) source for `apps/arena/tests/pipeline_e2e.rs` captured during arena
+      rust-source-unit (td_ast) source for `tests/pipeline_e2e.rs` captured during arena
       standardization onto the codegen ladder.
 ```

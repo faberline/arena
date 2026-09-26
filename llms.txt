@@ -1,4 +1,4 @@
-<!-- SPEC-MANAGED: apps/arena/tech-design/semantic/arena-projects-arena.md#schema -->
+<!-- SPEC-MANAGED: tech-design/semantic/arena-projects-arena.md#schema -->
 <!-- CODEGEN-BEGIN -->
 # arena Agent Context
 
@@ -7,7 +7,7 @@
 ## Tech Design
 
 - [Tech Design](tech-design): implementation source of truth.
-- Validate: `aw td check apps/arena/tech-design`.
+- Validate: `aw td check tech-design`.
 
 ## Capability Map
 

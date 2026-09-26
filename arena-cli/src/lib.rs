@@ -1,4 +1,4 @@
-// SPEC-MANAGED: apps/arena/tech-design/semantic/source/projects-arena-arena-cli-src-lib-rs.md#rust-source-unit
+// SPEC-MANAGED: tech-design/semantic/source/projects-arena-arena-cli-src-lib-rs.md#rust-source-unit
 // CODEGEN-BEGIN
 //! arena CLI library — verb tree + dispatch, shared by the `arena` binary.
 
